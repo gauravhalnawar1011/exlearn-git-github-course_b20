@@ -1,0 +1,20 @@
+name: exlearn needs bloack added
+on:
+  push:
+    branches:
+      - main
+jobs: 
+  tf-init:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "terraform init in progress"
+
+  tf-validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "terraform validate in progress"
+
+  tf-plan:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "terraform  plan is in progress"
