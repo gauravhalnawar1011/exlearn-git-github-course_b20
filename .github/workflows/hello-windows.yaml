@@ -6,6 +6,10 @@ jobs:
         runs-on: windows-latest
         steps:
           - run: echo "Hello from a GitHub Actions workflow!"
+    say-bye:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "hello from the 2nd job in windows workflow"
 
 
 
