@@ -1,8 +1,9 @@
 name: exlearn needs bloack added
 on:
-  push:
-    branches:
-      - main
+    workflow_dispatch:
+#   push:
+#     branches:
+#       - main
 jobs: 
   tf-init:
     runs-on: ubuntu-latest
@@ -11,10 +12,15 @@ jobs:
 
   tf-validate:
     runs-on: ubuntu-24.04
+    needs: 
+      - tf-init
     steps:
-      - run: echo "terraform validate in progress"
+      - run: echo "terraform validate in sucess after tf-int job"
 
   tf-plan:
     runs-on: ubuntu-24.04
+    needs:
+        - tf-init
+        - tf-validate
     steps:
-      - run: echo "terraform  plan is in progress"
+      - run: echo "after tf init job and tf validate job i am excuted"
