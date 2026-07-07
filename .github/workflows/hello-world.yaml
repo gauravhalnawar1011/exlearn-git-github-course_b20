@@ -4,6 +4,6 @@ on:
   workflow_dispatch: 
 jobs:
   say_hello:
-    runs_on: ubuntu-24.04
+    runs-on: ubuntu-24.04
     steps:
       - run: echo "Hello from a GitHub Actions workflow!"
