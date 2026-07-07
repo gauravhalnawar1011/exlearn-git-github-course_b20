@@ -1,0 +1,9 @@
+---
+name: hello from the github action mac os 
+on:
+  workflow_dispatch: 
+jobs:
+  say_hello:
+    runs-on: macos-latest
+    steps:
+      - run: echo "Hello from a GitHub Actions workflow from the mac os!"
