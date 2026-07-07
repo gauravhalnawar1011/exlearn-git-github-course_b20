@@ -1,0 +1,9 @@
+---
+name: hello from the github action exlearn tech
+on:
+  workflow_dispatch: null
+jobs:
+  say_hello:
+    runs_on: ubuntu-24.04
+    steps:
+      - run: echo "Hello from a GitHub Actions workflow!"
