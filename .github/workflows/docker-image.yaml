@@ -14,9 +14,9 @@ jobs:
 
       - name: Build images
         run: |
-          docker build frontend -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-frontend-v1:latest
-          docker backend -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-backend-v1:latest
-          docker database -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-database-v1:latest
+          docker build ./frontend -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-frontend-v1:latest
+          docker ./backend -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-backend-v1:latest
+          docker ./database -t ${{ secrets.DOCKER_HUB_USERNAME }}/major-project-database-v1:latest
 
       - name: Push images to Docker Hub
         run: |
