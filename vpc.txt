@@ -1,3 +1,0 @@
-hello this an vpc initial code for merge conflict demo
-hello from the devops1 branch in merge conflict demo 
-hello from the devops2 branch this the devops 2
